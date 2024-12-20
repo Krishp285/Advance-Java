@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="Employee.css">
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>Employee Details</legend>
+            <form action="insert_employeedata_in_tableform" method="post">
+                <table>
+                    <tr>
+                        <td>Full Name</td>
+                        <td><input type="text" placeholder="Full Name" required name="fullname"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Birth Date</td>
+                        <td><input type="date" name="birthdate"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="gender" value="male" id="male"><label for="male"> Male</label>
+                            <input type="radio" name="gender" value="female" id="female"><label for="female"> Female</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="email" placeholder="example@gmail.com" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Mobile Number</td>
+                        <td><input type="tel" name="mobile" placeholder="123-456-7890"></td>
+                    </tr>
+
+                    <tr>
+                        <td>State</td>
+                        <td><input type="text" name="state"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Languages</td>
+                        <td>
+                            <input type="checkbox" name="languages" value="C" id="c"><label for="c"> C</label>
+                            <input type="checkbox" name="languages" value="C++" id="cpp"><label for="cpp"> C++</label>
+                            <input type="checkbox" name="languages" value="Java" id="java"><label for="java"> Java</label>
+                            <input type="checkbox" name="languages" value="Python" id="python"><label for="python"> Python</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Department</td>
+                        <td><input type="text" placeholder="Department" required name="department"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Designation</td>
+                        <td><input type="text" placeholder="Designation" name="designation"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Employment</td>
+                        <td>
+                            <input type="radio" name="employment" value="parttime" id="parttime">
+                            <label for="parttime"> Part-Time</label>
+                            <input type="radio" name="employment" value="fulltime" id="fulltime">
+                            <label for="fulltime"> Full-Time</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="submit-cell">
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

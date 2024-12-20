@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>first-web-application</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  
+  <context-param>
+  
+  
+  		<param-name>URLNAME</param-name>
+  		<param-value>jdbc:mysql://localhost:3306/test</param-value>
+  
+</context-param>
+  
+<context-param>
+  	  	
+  	  	<param-name>DRIVERCLASS</param-name>
+  		<param-value>com.mysql.cj.jdbc.Driver</param-value>
+  
+</context-param>
+
+<context-param>
+  
+  	  	<param-name>USERNAME</param-name>
+  		<param-value>Krish</param-value>
+  
+</context-param>
+  
+<context-param>
+  	  	
+  	  	<param-name>PASSWORD</param-name>
+  		<param-value>admin@123</param-value>
+  
+</context-param>
+
+
+
+  <servlet>
+  <servlet-name>Servlet_context_1</servlet-name>
+  		<servlet-class>com.royal.controller.Servlet_context_1</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Servlet_context_1</servlet-name>
+  <url-pattern>/servlet_context_1</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  <servlet>
+  <servlet-name>Firstservlet</servlet-name>
+  		<servlet-class>com.royal.controller.Firstservlet</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Firstservlet</servlet-name>
+  <url-pattern>/firstservlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>Table</servlet-name>
+  		<servlet-class>com.royal.controller.Table</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Table</servlet-name>
+  <url-pattern>/table</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>abc</servlet-name>
+  	<servlet-class>com.royal.controller.Second</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>abc</servlet-name>
+  	<url-pattern>/xyz</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>Pattern_loop</servlet-name>
+  		<servlet-class>com.royal.controller.Pattern_loop</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Pattern_loop</servlet-name>
+  <url-pattern>/pattern_loop</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet>
+  <servlet-name>Prime_number</servlet-name>
+  		<servlet-class>com.royal.controller.Prime_number</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Prime_number</servlet-name>
+  <url-pattern>/prime_number</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+  <servlet-name>Life_cycle_servlet</servlet-name>
+  		<servlet-class>com.royal.controller.Life_cycle_servlet</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Life_cycle_servlet</servlet-name>
+  <url-pattern>/life_cycle_servlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  		<servlet-class>com.royal.controller.LoginServlet</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    
+  <servlet>
+  <servlet-name>Visitorcount_ipaddress</servlet-name>
+  		<servlet-class>com.royal.controller.Visitorcount_ipaddress</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Visitorcount_ipaddress</servlet-name>
+  <url-pattern>/visitorcount_ipaddress</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  <servlet-name>LoginPage1</servlet-name>
+  		<servlet-class>com.royal.controller.LoginPage1</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>LoginPage1</servlet-name>
+  <url-pattern>/LoginPage1</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   
+    <servlet>
+  <servlet-name>GoogleSearchServlet</servlet-name>
+  		<servlet-class>com.royal.controller.GoogleSearchServlet</servlet-class>
+  		<load-on-startup>-2</load-on-startup>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>GoogleSearchServlet</servlet-name>
+  <url-pattern>/GoogleSearchServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet>
+  <servlet-name>Requestheaderinfoservlet</servlet-name>
+  <servlet-class>com.royal.controller.Requestheaderinfoservlet</servlet-class>
+  <load-on-startup>-1</load-on-startup>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Requestheaderinfoservlet</servlet-name>
+  <url-pattern>/requestheader</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>Load_on_startup</servlet-name>
+  <servlet-class>com.royal.controller.Load_on_startup</servlet-class>
+  <load-on-startup>-3</load-on-startup>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Load_on_startup</servlet-name>
+  <url-pattern>/load_on_startup</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>Fourthnavigationservlet</servlet-name>
+  <servlet-class>com.royal.controller.Fourthnavigationservlet</servlet-class>
+   
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Fourthnavigationservlet</servlet-name>
+  <url-pattern>/fourthnavigationservlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>Fifthnavigationservlet</servlet-name>
+  <servlet-class>com.royal.controller.Fifthnavigationservlet</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Fifthnavigationservlet</servlet-name>
+  <url-pattern>/fifthnavigationservlet</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  <servlet-name>Insert_data_in_tableform</servlet-name>
+  <servlet-class>com.royal.controller.Insert_data_in_tableform</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Insert_data_in_tableform</servlet-name>
+  <url-pattern>/insert_data_in_tableform</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  <servlet-name>ListOfStudent</servlet-name>
+  <servlet-class>com.royal.controller.ListOfStudent</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>ListOfStudent</servlet-name>
+  <url-pattern>/listOfStudent</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+    <servlet>
+  <servlet-name>Insert_employeedata_in_tableform</servlet-name>
+  <servlet-class>com.royal.controller.Insert_employeedata_in_tableform</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Insert_employeedata_in_tableform</servlet-name>
+  <url-pattern>/insert_employeedata_in_tableform</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  <servlet-name>ListOfEmployee</servlet-name>
+  <servlet-class>com.royal.controller.ListOfEmployee</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>ListOfEmployee</servlet-name>
+  <url-pattern>/listOfEmployee</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>Servlet_configure_1</servlet-name>
+  <servlet-class>com.royal.controller.Servlet_configure_1</servlet-class>  
+  
+  <init-param>
+  
+  		<param-name>URLNAME</param-name>
+  		<param-value>jdbc:mysql://localhost:3306/test</param-value>
+  
+   </init-param>
+  
+  <init-param>
+  	  	
+  	  	<param-name>DRIVERCLASS</param-name>
+  		<param-value>com.mysql.cj.jdbc.Driver</param-value>
+  
+  </init-param>
+  
+  <init-param>
+  
+  	  	<param-name>USERNAME</param-name>
+  		<param-value>Krish</param-value>
+  
+  </init-param>
+  
+  <init-param>
+  	  	
+  	  	<param-name>PASSWORD</param-name>
+  		<param-value>admin@123</param-value>
+  
+ </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Servlet_configure_1</servlet-name>
+  <url-pattern>/servlet_configure_1</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+    <servlet>
+  <servlet-name>Servlet_configure_2</servlet-name>
+  <servlet-class>com.royal.controller.Servlet_configure_2</servlet-class>  
+  
+  <init-param>
+  
+  		<param-name>lang_1</param-name>
+  		<param-value>C</param-value>
+  
+   </init-param>
+  
+  <init-param>
+  	  	
+  	  	<param-name>lang_2</param-name>
+  		<param-value>C++</param-value>
+  
+  </init-param>
+  
+  <init-param>
+  
+  	  	<param-name>lang_3</param-name>
+  		<param-value>Java</param-value>
+  
+  </init-param>
+  
+  <init-param>
+  	  	
+  	  	<param-name>lang_4</param-name>
+  		<param-value>Python</param-value>
+  
+ </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Servlet_configure_2</servlet-name>
+  <url-pattern>/servlet_configure_2</url-pattern>
+  </servlet-mapping>
+</web-app>
